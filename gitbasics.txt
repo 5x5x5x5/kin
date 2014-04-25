@@ -1,0 +1,13 @@
+## git repo creation and initial push from the command line
+
+#placeholder for README.md
+touch readme.md
+git init
+git add README.md // or any other type of file addition
+git commit -m "first commit"  ## alternatively type >git commit -a "first commit" (I think)
+git remote add origin htpps://github.com/5x5x5x5/??reponame??.git
+git push -u origin master
+
+## Push an existing repository from the command line
+git remote add origin https://github.com/5x5x5x5/kin.git
+git push -u origin master
