@@ -12,55 +12,43 @@ bash Miniconda3-3.3.0-Linux-x86_64.sh #must agree to license and such
 #Need to login and out - look for flags to fix this
 conda install anaconda # need to click yes - look for flags to skip this
 
+## Default install does not include IPython 2 yet, so...
+conda update ipython
 
+## Create nbserver profile
+ipython profile create nbserver
+ipython
 
+#In ipython execute the following
+#> from IPython.lib import passwd
+#> passwd()
+##copy the sha:....
+#> !mkdir certificates
+#> cd certificates/
+#> !openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
+##some crazy questions
+#> cd ..
+#> cd .ipython/profile_nbserver
+##exit ipython
 
+emacs ipython_notebook_config.python
+#####Paste this part in the header - shift insert works for emacs
+c = get_config()
 
+# Kernel config
+c.IPKernelApp.pylab = 'inline'  # if you want plotting support always
 
+# Notebook config
+c.NotebookApp.certfile = u'/home/ubuntu/certificates/mycert.pem'
+c.NotebookApp.ip = '*'
+c.NotebookApp.open_browser = False
+c.NotebookApp.password = u'sha1:bcd259ccf...[your hashed password here]'
+# It is a good idea to put it on a known, fixed port
+c.NotebookApp.port = 8888
+#####C-x C-s and C-x C-z as a reminder
 
-
-
-
-# Install nvm: node-version manager
-# https://github.com/creationix/nvm
-sudo apt-get install -y git
-sudo apt-get install -y curl
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
-
-# Load nvm and install latest production node
-source $HOME/.nvm/nvm.sh
-nvm install v0.10.12
-nvm use v0.10.12
-
-# Install jshint to allow checking of JS code within emacs
-# http://jshint.com/
-npm install -g jshint
-
-# Install rlwrap to provide libreadline features with node
-# See: http://nodejs.org/api/repl.html#repl_repl
-sudo apt-get install -y rlwrap
-
-# Install emacs24
-# https://launchpad.net/~cassou/+archive/emacs
-sudo add-apt-repository -y ppa:cassou/emacs
-sudo apt-get -qq update
-sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
-
-# Install Heroku toolbelt
-# https://toolbelt.heroku.com/debian
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-
-# git pull and install dotfiles as well
 cd $HOME
-if [ -d ./dotfiles/ ]; then
-    mv dotfiles dotfiles.old
-fi
-if [ -d .emacs.d/ ]; then
-    mv .emacs.d .emacs.d~
-fi
-git clone https://github.com/5x5x5x5/dotfiles.git
-ln -sb dotfiles/.screenrc .
-ln -sb dotfiles/.bash_profile .
-ln -sb dotfiles/.bashrc .
-ln -sb dotfiles/.bashrc_custom .
-ln -sf dotfiles/.emacs.d .
+ipython notebook --profile=nbserver
+
+## open up port 8888 of instance
+## https://ec2-gobbledgook-amazonaws.com:8888 will take you there
