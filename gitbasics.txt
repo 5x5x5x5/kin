@@ -1,6 +1,6 @@
 ## git repo creation and initial push from the command line
 
-git config --global user.email "daniel.siegle@gmail.com"
+git config --global user.email "you@email.com"
 
 #placeholder for README.md
 touch readme.md
