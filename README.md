@@ -8,7 +8,7 @@ follows:
 cd $HOME
 sudo apt-get install -y git-core
 git config --global user.email "your.name@mail.com"
-git clone https://github.com/5x5x5x5/setup.git
+git clone https://github.com/5x5x5x5/kin.git
 ./setup/setup.sh   
 ```
 
