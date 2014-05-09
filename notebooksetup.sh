@@ -15,8 +15,11 @@ conda install anaconda # need to click yes - look for flags to skip this
 ## Default install does not include IPython 2 yet, so...
 conda update ipython
 
-##Additional package for cheminformatics
-sudo apt-get install python-rdkit librdkit1 rdkit-data
+## Install sklearn-pandas
+pip install sklearn-pandas
+
+##Additional package for cheminformatics - turns out to need python 2.7
+#sudo apt-get install python-rdkit librdkit1 rdkit-data
 
 ## Create nbserver profile
 ipython profile create nbserver
