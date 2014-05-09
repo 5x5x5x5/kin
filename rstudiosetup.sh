@@ -8,7 +8,7 @@ sudo adduser rstudio
 sudo apt-get update
 
 #install r
-sudo apt-get install r-base
+sudo apt-get install -y r-base
 
 #install rstudio
 sudo apt-get install gdebi-core
