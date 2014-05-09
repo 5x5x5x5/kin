@@ -1,10 +1,14 @@
 #!/bin/bash
 #This file directs the setup of RStuio server on an Ubuntu 12.04 LTS EC2 instance
 
-# Let's add a user
-sudo adduser rstudio
+# Let's add a user - 
+# sudo adduser rstudio
 
-#update
+# Alternately just setup a passwd for ubuntu
+sudo passwd ubuntu
+# write things twice
+
+# update
 sudo apt-get update
 
 #install r
