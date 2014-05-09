@@ -48,6 +48,7 @@ c.IPKernelApp.pylab = 'inline'  # if you want plotting support always
 c.NotebookApp.certfile = u'/home/ubuntu/certificates/mycert.pem'
 c.NotebookApp.ip = '*'
 c.NotebookApp.open_browser = False
+# Shift-Insert is your friend
 c.NotebookApp.password = u'sha1:bcd259ccf...[your hashed password here]'
 # It is a good idea to put it on a known, fixed port
 c.NotebookApp.port = 8888
