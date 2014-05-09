@@ -37,7 +37,7 @@ ipython
 #> cd .ipython/profile_nbserver
 ##exit ipython
 
-emacs ipython_notebook_config.python
+emacs ipython_notebook_config.py
 #####Paste this part in the header - shift insert works for emacs
 c = get_config()
 
