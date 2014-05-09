@@ -11,10 +11,12 @@ sudo apt-get update
 sudo apt-get install -y r-base
 
 #install rstudio
-sudo apt-get install gdebi-core
+sudo apt-get install -y gdebi-core
 sudo apt-get install libapparmor1 # required only for Ubuntu
 wget http://download2.rstudio.org/rstudio-server-0.98.507-amd64.deb
 sudo gdebi rstudio-server-0.98.507-amd64.deb
+
+# answer yes ans look for flag later
 
 # Just checking...
 sudo rstudio-server verify-installation
