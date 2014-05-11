@@ -18,6 +18,9 @@ conda update ipython
 ## Install sklearn-pandas
 pip install sklearn-pandas
 
+# installxlrd library to enable pandas import of Excel files
+pip install xlrd
+
 ##Additional package for cheminformatics - turns out to need python 2.7
 #sudo apt-get install python-rdkit librdkit1 rdkit-data
 
