@@ -21,6 +21,14 @@ pip install sklearn-pandas
 # installxlrd library to enable pandas import of Excel files
 pip install xlrd
 
+# neat display of version info for all important libraries
+# run this in IPython
+#%install_ext http://raw.github.com/jrjohansson/version_information/master/version_information.py
+
+# Call this:
+#%load_ext version_information
+#%version_information numpy, scipy, matplotlib, sympy
+
 ##Additional package for cheminformatics - turns out to need python 2.7
 #sudo apt-get install python-rdkit librdkit1 rdkit-data
 
