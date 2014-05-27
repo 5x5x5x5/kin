@@ -48,3 +48,6 @@ ln -sf dotfiles/.emacs.d .
 
 # Run the RStudio setup script
 bash kin/rstudiosetup.sh
+
+# install ocatve too
+bash kin/octavesetup.sh
