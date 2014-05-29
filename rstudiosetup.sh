@@ -23,6 +23,9 @@ sudo gdebi rstudio-server-0.98.507-amd64.deb
 # answer yes ans look for flag later
 
 # Just checking...
-sudo rstudio-server verify-installation
+# sudo rstudio-server verify-installation
 
 # in browser go to http://ec2-gobbledygook-1.amazonaws.com:8787
+
+# Remove install files
+rm -y rstudio-server-0.98.507-amd64.deb
