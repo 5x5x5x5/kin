@@ -33,4 +33,4 @@ pip install xlrd
 #sudo apt-get install python-rdkit librdkit1 rdkit-data
 
 # Remove installation files
-rm -y Miniconda3-3.3.0-Linux-x86_64.sh
+rm -f Miniconda3-3.3.0-Linux-x86_64.sh
