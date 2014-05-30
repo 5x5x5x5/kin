@@ -28,4 +28,4 @@ sudo gdebi rstudio-server-0.98.507-amd64.deb
 # in browser go to http://ec2-gobbledygook-1.amazonaws.com:8787
 
 # Remove install files
-rm -y rstudio-server-0.98.507-amd64.deb
+rm -f rstudio-server-0.98.507-amd64.deb
