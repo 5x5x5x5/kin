@@ -5,15 +5,20 @@
  # I like htop
  sudo apt-get install htop
 
+# Install Python 3.4 and Scipy stack with Anaconda2.0
+wget http://repo.continuum.io/anaconda3/Anaconda3-2.0.0-Linux-x86_64.sh
+bash Anaconda3-2.0.0-Linux-x86_64.sh
+
+# Next steps now unnccessary after Anaconda 2 release
 #Install miniconda3
-wget http://repo.continuum.io/miniconda/Miniconda3-3.3.0-Linux-x86_64.sh
-bash Miniconda3-3.3.0-Linux-x86_64.sh #must agree to license and such
+# wget http://repo.continuum.io/miniconda/Miniconda3-3.3.0-Linux-x86_64.sh
+# bash Miniconda3-3.3.0-Linux-x86_64.sh #must agree to license and such
 
 #Need to login and out - look for flags to fix this
-conda install anaconda # need to click yes - look for flags to skip this
+# conda install anaconda # need to click yes - look for flags to skip this
 
 ## Default install does not include IPython 2 yet, so...
-conda update ipython
+# conda update ipython
 
 ## Install sklearn-pandas
 pip install sklearn-pandas
