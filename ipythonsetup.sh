@@ -9,6 +9,8 @@
 wget http://repo.continuum.io/anaconda3/Anaconda3-2.0.0-Linux-x86_64.sh
 bash Anaconda3-2.0.0-Linux-x86_64.sh
 
+PATH=~/anaconda3/bin:$PATH
+
 # Next steps now unnccessary after Anaconda 2 release
 #Install miniconda3
 # wget http://repo.continuum.io/miniconda/Miniconda3-3.3.0-Linux-x86_64.sh
@@ -24,7 +26,8 @@ bash Anaconda3-2.0.0-Linux-x86_64.sh
 pip install sklearn-pandas
 
 # installxlrd library to enable pandas import of Excel files
-pip install xlrd
+# Unneccessary now the Anaconda2 includes this functionality
+# pip install xlrd
 
 # neat display of version info for all important libraries
 # run this in IPython
