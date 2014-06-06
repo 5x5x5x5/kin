@@ -22,8 +22,8 @@ PATH=~/anaconda3/bin:$PATH
 ## Default install does not include IPython 2 yet, so...
 # conda update ipython
 
-## Install sklearn-pandas
-pip install sklearn-pandas
+## Install sklearn-pandas # not working since upgrade to Anaconda2.0
+# pip install sklearn-pandas
 
 # installxlrd library to enable pandas import of Excel files
 # Unneccessary now the Anaconda2 includes this functionality
