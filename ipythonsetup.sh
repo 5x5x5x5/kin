@@ -11,6 +11,10 @@ bash Anaconda3-2.0.0-Linux-x86_64.sh
 
 PATH=~/anaconda3/bin:$PATH
 
+# Unbelievablely there is no scikit-learn in Anaconda
+# here is the latest development version
+pip install git+https://github.com/scikit-learn/scikit-learn.git
+
 # Next steps now unnccessary after Anaconda 2 release
 #Install miniconda3
 # wget http://repo.continuum.io/miniconda/Miniconda3-3.3.0-Linux-x86_64.sh
