@@ -6,14 +6,14 @@
  sudo apt-get install htop
 
 # Install Python 3.4 and Scipy stack with Anaconda2.0
-wget http://repo.continuum.io/anaconda3/Anaconda3-2.0.0-Linux-x86_64.sh
-bash Anaconda3-2.0.0-Linux-x86_64.sh
+#wget http://repo.continuum.io/anaconda3/Anaconda3-2.0.0-Linux-x86_64.sh
+#bash Anaconda3-2.0.0-Linux-x86_64.sh
 
-PATH=~/anaconda3/bin:$PATH
+#PATH=~/anaconda3/bin:$PATH
 
 # Unbelievablely there is no scikit-learn in Anaconda
 # here is the latest development version
-pip install git+https://github.com/scikit-learn/scikit-learn.git
+#pip install git+https://github.com/scikit-learn/scikit-learn.git
 
 # Next steps now unnccessary after Anaconda 2 release
 #Install miniconda3
@@ -43,6 +43,9 @@ pip install git+https://github.com/scikit-learn/scikit-learn.git
 
 ##Additional package for cheminformatics - turns out to need python 2.7
 #sudo apt-get install python-rdkit librdkit1 rdkit-data
+
+# install ggplot
+pip install ggplot
 
 # Remove installation files
 rm -f Anaconda3-2.0.0-Linux-x86_64.sh
