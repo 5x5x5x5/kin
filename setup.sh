@@ -49,10 +49,10 @@ ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
 # Run the RStudio setup script
-bash kin/rstudiosetup.sh
+# bash kin/rstudiosetup.sh
 
 # install ocatve too
-bash kin/octavesetup.sh
+# bash kin/octavesetup.sh
 
 # update and upgrade installation
 sudo apt-get update
