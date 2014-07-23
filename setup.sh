@@ -13,9 +13,11 @@ source $HOME/.nvm/nvm.sh
 nvm install v0.10.29
 nvm use v0.10.29
 
-# Install jshint to allow checking of JS code within emacs
+# Install jshint and pylint to allow checking of JS and Python code within emacs
 # http://jshint.com/
+# Http://www.pylint.com/
 npm install -g jshint
+sudo apt-get install pylint
 
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
